@@ -156,12 +156,12 @@ button:hover {
 @media (max-width: 600px) {
 
   body {
-    font-size: 50px;      /* ← 24px → 32px に爆増 */
+    font-size: 100px;      /* ← 24px → 32px に爆増 */
     padding: 20px;
   }
 
   button {
-    font-size: 50px;      /* ← 24px → 32px */
+    font-size: 100px;      /* ← 24px → 32px */
     padding: 24px;        /* 押しやすさUP */
   }
 
@@ -173,12 +173,12 @@ button:hover {
   }
 
   #quiz-title {
-    font-size: 60px;      /* ← 32px → 40px */
+    font-size: 120px;      /* ← 32px → 40px */
     margin-bottom: 30px;
   }
 
   #question-word {
-    font-size: 60px;      /* ← 36px → 48px（単語を超巨大化） */
+    font-size: 120px;      /* ← 36px → 48px（単語を超巨大化） */
     margin: 40px 0;
   }
 
