@@ -137,36 +137,45 @@ button:hover {
 @media (max-width: 600px) {
 
   body {
-    font-size: 18px; /* 全体の文字を少し大きく */
-    padding: 10px;
+    font-size: 20px;        /* 全体の文字を大きく */
+    padding: 15px;
   }
 
-  #home h1,
-  #quiz-title,
-  #result h2 {
-    font-size: 24px; /* タイトルを大きく */
+  h1, h2, #quiz-title {
+    font-size: 28px;        /* タイトルを大きく */
+    text-align: center;
+  }
+
+  #home p {
+    font-size: 20px;
+  }
+
+  #group-buttons button {
+    width: 90%;
+    max-width: 450px;
+    font-size: 20px;
+    padding: 14px;
+    margin: 12px auto;
   }
 
   #choices button {
-    width: 90%;              /* スマホ幅に合わせる */
-    max-width: 400px;        /* 大きすぎないように上限 */
-    font-size: 18px;         /* ボタンの文字を大きく */
-    padding: 12px;           /* 押しやすくする */
+    width: 90%;
+    max-width: 450px;
+    font-size: 20px;
+    padding: 14px;
     margin: 12px auto;
   }
 
   #next-btn {
     width: 90%;
-    max-width: 400px;
-    font-size: 18px;
-    padding: 12px;
-  }
-
-  #result-text {
+    max-width: 450px;
     font-size: 20px;
+    padding: 14px;
   }
 
+  #result-text,
   #score-text {
     font-size: 22px;
+    text-align: center;
   }
 }
