@@ -161,7 +161,7 @@ function generateQuestion() {
   document.getElementById("question-word").innerText = q.word;
 
 let choices = currentGroup
-  .filter(item => item !== q && item.pos === q.pos)  // 同じ品詞だけ
+  .filter(item => item !== q && item.pos === q.pos)  
   .sort(() => Math.random() - 0.5)
   .slice(0, 3);
 
@@ -189,7 +189,6 @@ let choices = currentGroup
 function checkAnswer(selected, correct, questionObj) {
   const choiceButtons = document.querySelectorAll("#choices button");
 
-  // 正解の選択肢を赤にする
   choiceButtons.forEach(btn => {
     if (btn.innerText === correct) {
       btn.classList.add("correct-choice");
@@ -205,7 +204,6 @@ function checkAnswer(selected, correct, questionObj) {
     document.getElementById("result-text").innerText = "不正解…";
     wrongList.push(questionObj);
 
-    // 間違えた選択肢を薄い黒にする
     choiceButtons.forEach(btn => {
       if (btn.innerText === selected) {
         btn.classList.add("wrong-choice");
@@ -213,16 +211,16 @@ function checkAnswer(selected, correct, questionObj) {
     });
   }
 
-  // ボタンを押せなくする
+
   choiceButtons.forEach(btn => btn.disabled = true);
 
-  // 1秒後に自動で次の問題へ進む
+
   setTimeout(() => {
     nextQuestion();
   }, 1000);
 }
 
-// 色と無効化をリセット
+
 document.querySelectorAll("#choices button").forEach(btn => {
   btn.classList.remove("correct-choice", "wrong-choice");
   btn.disabled = false;
