@@ -133,58 +133,63 @@ button:hover {
   margin-bottom: 20px;
 }
 
-/* スマホ向けレイアウト調整（強化版） */
+/* スマホ向けレイアウト調整（超拡大モード） */
 @media (max-width: 600px) {
 
   body {
-    font-size: 22px;        /* 全体の文字を大きく */
-    padding: 10px;          /* 余白をスマホ向けに */
+    font-size: 30px;        /* 全体の文字をかなり大きく */
+    padding: 0;             /* 余白を最小にして画面を広く使う */
   }
 
   h1, h2, #quiz-title {
-    font-size: 30px;        /* タイトルを大きく */
-    margin-bottom: 25px;
+    font-size: 38px;        /* タイトルを超大きく */
+    margin-bottom: 30px;
   }
 
   #home {
-    margin-top: 20px;
+    margin-top: 10px;
   }
 
+  #home p {
+    font-size: 30px;
+  }
+
+  /* ホーム画面のボタン */
   #group-buttons button {
-    width: 95%;             /* スマホ幅いっぱい */
-    max-width: 500px;
-    font-size: 22px;
-    padding: 16px;
-    margin: 14px auto;
+    width: 100%;            /* 画面幅いっぱい */
+    font-size: 30px;        /* 文字も大きく */
+    padding: 24px;          /* 押しやすく */
+    margin: 18px auto;
   }
 
+  /* 問題の単語 */
   #question-word {
-    font-size: 34px;        /* 問題の単語を大きく */
-    margin: 25px 0;
+    font-size: 44px;        /* かなり大きく */
+    margin: 35px 0;
   }
 
+  /* 選択肢ボタン */
   #choices button {
-    width: 95%;
-    max-width: 500px;
-    font-size: 22px;
-    padding: 16px;
-    margin: 14px auto;
+    width: 100%;
+    font-size: 30px;
+    padding: 24px;
+    margin: 18px auto;
   }
 
+  /* 結果画面 */
   #result-text {
-    font-size: 24px;
-    margin-top: 20px;
+    font-size: 32px;
+    margin-top: 25px;
   }
 
   #score-text {
-    font-size: 26px;
-    margin-top: 20px;
+    font-size: 34px;
+    margin-top: 25px;
   }
 
   #next-btn {
-    width: 95%;
-    max-width: 500px;
-    font-size: 22px;
-    padding: 16px;
+    width: 100%;
+    font-size: 30px;
+    padding: 24px;
   }
 }
