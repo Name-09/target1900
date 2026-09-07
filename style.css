@@ -132,3 +132,41 @@ button:hover {
   font-size: 26px;
   margin-bottom: 20px;
 }
+
+/* スマホ向けレイアウト調整 */
+@media (max-width: 600px) {
+
+  body {
+    font-size: 18px; /* 全体の文字を少し大きく */
+    padding: 10px;
+  }
+
+  #home h1,
+  #quiz-title,
+  #result h2 {
+    font-size: 24px; /* タイトルを大きく */
+  }
+
+  #choices button {
+    width: 90%;              /* スマホ幅に合わせる */
+    max-width: 400px;        /* 大きすぎないように上限 */
+    font-size: 18px;         /* ボタンの文字を大きく */
+    padding: 12px;           /* 押しやすくする */
+    margin: 12px auto;
+  }
+
+  #next-btn {
+    width: 90%;
+    max-width: 400px;
+    font-size: 18px;
+    padding: 12px;
+  }
+
+  #result-text {
+    font-size: 20px;
+  }
+
+  #score-text {
+    font-size: 22px;
+  }
+}
