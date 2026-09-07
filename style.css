@@ -137,50 +137,49 @@ button:hover {
 }
 
 /* ===== スマホ向けレイアウト（画面幅600px以下） ===== */
-
 @media (max-width: 600px) {
 
   body {
-    font-size: 6vw;
-    padding: 3vw;
+    font-size: 22px;     /* ← px に戻す（確実に大きくなる） */
+    padding: 10px;
   }
 
   button {
-    font-size: 6vw;
-    padding: 5vw;
+    font-size: 22px;
+    padding: 14px;
   }
 
   #group-buttons button {
-    width: 90%;
-    font-size: 6vw;
-    padding: 5vw;
+    width: 95%;
+    font-size: 22px;
+    padding: 14px;
   }
 
   #quiz-title {
-    font-size: 8vw;
+    font-size: 28px;
   }
 
   #question-word {
-    font-size: 10vw;
+    font-size: 32px;
   }
 
   #choices button {
-    width: 90%;
-    font-size: 6vw;
-    padding: 5vw;
+    width: 95%;
+    font-size: 22px;
+    padding: 14px;
   }
 
   #result-text {
-    font-size: 7vw;
+    font-size: 24px;
   }
 
   #score-text {
-    font-size: 8vw;
+    font-size: 26px;
   }
 
   #next-btn {
-    width: 90%;
-    font-size: 6vw;
-    padding: 5vw;
+    width: 95%;
+    font-size: 22px;
+    padding: 14px;
   }
 }
