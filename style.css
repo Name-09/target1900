@@ -1,17 +1,17 @@
-/* ===== 共通スタイル（PC・スマホ両方） ===== */
+/* ===== 共通スタイル（基本デザイン） ===== */
 
 body {
   font-family: sans-serif;
   text-align: center;
   background: #f5f5f5;
   margin: 0;
-  padding: 2vw;
+  padding: 20px;
 }
 
 button {
-  padding: 1.5vw 3vw;
-  margin: 1vw;
-  font-size: 2vw;
+  padding: 12px 20px;
+  margin: 10px;
+  font-size: 18px;
   cursor: pointer;
   border-radius: 8px;
   border: none;
@@ -24,35 +24,33 @@ button:hover {
 }
 
 #home {
-  margin-top: 4vw;
+  margin-top: 40px;
 }
 
 #group-buttons button {
   display: block;
-  width: 25vw;
-  max-width: 300px;
-  margin: 2vw auto;
+  width: 250px;
+  margin: 12px auto;
 }
 
 #quiz {
-  margin-top: 3vw;
+  margin-top: 30px;
 }
 
 #quiz-title {
-  font-size: 3.5vw;
-  margin-bottom: 2vw;
+  font-size: 28px;
+  margin-bottom: 20px;
 }
 
 #question-word {
-  font-size: 4vw;
-  margin: 2vw 0;
+  font-size: 32px;
+  margin: 20px 0;
 }
 
 #choices button {
   display: block;
-  width: 30vw;
-  max-width: 350px;
-  margin: 2vw auto;
+  width: 250px;
+  margin: 12px auto;
   background: #fff;
   color: #000;
   border: 2px solid #000;
@@ -60,23 +58,23 @@ button:hover {
 
 #next-btn {
   display: block;
-  margin: 2vw auto;
+  margin: 20px auto;
 }
 
 #result-text {
-  font-size: 3vw;
-  margin: 2vw;
-  height: 3vw;
+  font-size: 24px;
+  margin: 20px;
+  height: 30px;
 }
 
 #correct-mark {
   position: fixed;
   top: 50%;
   left: 50%;
-  width: 20vw;
-  height: 20vw;
+  width: 180px;
+  height: 180px;
   transform: translate(-50%, -50%);
-  border: 2vw solid rgba(255, 0, 0, 0.6);
+  border: 20px solid rgba(255, 0, 0, 0.6);
   border-radius: 50%;
   display: none;
   pointer-events: none;
@@ -87,8 +85,8 @@ button:hover {
   position: fixed;
   top: 50%;
   left: 50%;
-  width: 20vw;
-  height: 20vw;
+  width: 180px;
+  height: 180px;
   transform: translate(-50%, -50%);
   display: none;
   pointer-events: none;
@@ -101,8 +99,8 @@ button:hover {
   position: absolute;
   top: 0;
   left: 50%;
-  width: 2vw;
-  height: 20vw;
+  width: 20px;
+  height: 180px;
   background: rgba(0, 100, 255, 0.6);
   transform-origin: center;
 }
@@ -128,58 +126,76 @@ button:hover {
 }
 
 #result {
-  margin-top: 4vw;
+  margin-top: 40px;
 }
 
 #score-text {
-  font-size: 3vw;
-  margin-bottom: 2vw;
+  font-size: 26px;
+  margin-bottom: 20px;
 }
 
-/* ===== スマホ向けレイアウト（画面幅600px以下） ===== */
+
+/* ===== PC向け（画面幅600px以上） ===== */
+@media (min-width: 601px) {
+
+  body {
+    font-size: 18px;   /* PCは普通サイズに戻す */
+  }
+
+  #group-buttons button {
+    width: 250px;      /* PCは固定幅 */
+  }
+
+  #choices button {
+    width: 250px;
+  }
+}
+
+
+/* ===== スマホ向け（画面幅600px以下） ===== */
 @media (max-width: 600px) {
 
   body {
-    font-size: 22px;     /* ← px に戻す（確実に大きくなる） */
+    font-size: 24px;   /* スマホは確実に大きくする */
     padding: 10px;
   }
 
   button {
-    font-size: 22px;
-    padding: 14px;
+    font-size: 24px;
+    padding: 16px;
   }
 
   #group-buttons button {
     width: 95%;
-    font-size: 22px;
-    padding: 14px;
+    font-size: 24px;
+    padding: 16px;
   }
 
   #quiz-title {
-    font-size: 28px;
+    font-size: 32px;
   }
 
   #question-word {
-    font-size: 32px;
+    font-size: 36px;
   }
 
   #choices button {
     width: 95%;
-    font-size: 22px;
-    padding: 14px;
+    font-size: 24px;
+    padding: 16px;
   }
 
   #result-text {
-    font-size: 24px;
+    font-size: 26px;
   }
 
   #score-text {
-    font-size: 26px;
+    font-size: 28px;
   }
 
   #next-btn {
     width: 95%;
-    font-size: 22px;
-    padding: 14px;
+    font-size: 24px;
+    padding: 16px;
   }
 }
