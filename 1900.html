@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>英単語4択テスト</title>
+  <link rel="stylesheet" href="1900.css">
+</head>
+<body>
+
+  <!-- ホーム画面 -->
+  <div id="home">
+    <h1>英単語テスト ホーム</h1>
+    <p>解きたいグループを選んでください。</p>
+
+    <div id="group-buttons">
+      <!-- タイトルはあとで書き換えてOK -->
+      <button onclick="startGroup(group1, 'Group 1')">Group 1 を解く</button>
+      <button onclick="startGroup(group2, 'Group 2')">Group 2 を解く</button>
+      <button onclick="startGroup(group3, 'Group 3')">Group 3 を解く</button>
+      <button onclick="startGroup(group4, 'Group 4')">Group 4 を解く</button>
+      <button onclick="startGroup(group5, 'Group 5')">Group 5 を解く</button>
+      <button onclick="startGroup(group6, 'Group 6')">Group 6 を解く</button>
+      <button onclick="startGroup(group7, 'Group 7')">Group 7 を解く</button>
+      <button onclick="startGroup(group8, 'Group 8')">Group 8 を解く</button>
+    </div>
+  </div>
+
+    <div id="quiz" style="display:none;">
+    <h2 id="quiz-title">タイトル</h2>
+
+    <div id="question-area">
+      <div id="question-word"></div>
+      <div id="choices"></div>
+    </div>
+
+    <div id="feedback">
+      <div id="result-text"></div>
+    </div>
+
+     <div id="correct-mark"></div>
+    <div id="wrong-mark"></div>
+
+    <audio id="correct-sound">
+      <source src="クイズ正解5.mp3" type="audio/mpeg">
+    </audio>
+
+    <button id="next-btn" onclick="nextQuestion()" style="display:none;">
+      次へ進む
+    </button>
+   </div>
+
+  <div id="result" style="display:none;">
+    <h2>結果</h2>
+    <p id="score-text"></p>
+
+    <button onclick="startReview()">間違えた問題だけ解き直す</button>
+    <button onclick="goHome()">ホームに戻る</button>
+  </div>
+
+  <script src="1900.js"></script>
+</body>
+</html>
