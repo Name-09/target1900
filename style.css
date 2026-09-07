@@ -1,15 +1,17 @@
+/* ===== 共通スタイル（PC・スマホ両方） ===== */
+
 body {
   font-family: sans-serif;
   text-align: center;
   background: #f5f5f5;
   margin: 0;
-  padding: 20px;
+  padding: 2vw; /* 画面幅に応じて変化 */
 }
 
 button {
-  padding: 12px 20px;
-  margin: 8px;
-  font-size: 18px;
+  padding: 1.2vw 2vw;
+  margin: 1vw;
+  font-size: 1.8vw;
   cursor: pointer;
   border-radius: 8px;
   border: none;
@@ -22,58 +24,59 @@ button:hover {
 }
 
 #home {
-  margin-top: 40px;
+  margin-top: 4vw;
 }
 
 #group-buttons button {
   display: block;
-  width: 200px;
-  margin: 10px auto;
+  width: 20vw;
+  max-width: 300px;
+  margin: 2vw auto;
 }
 
 #quiz {
-  margin-top: 30px;
+  margin-top: 3vw;
 }
 
 #quiz-title {
-  font-size: 28px;
-  margin-bottom: 20px;
+  font-size: 3vw;
+  margin-bottom: 2vw;
 }
 
 #question-word {
-  font-size: 32px;
-  margin: 20px 0;
+  font-size: 3.5vw;
+  margin: 2vw 0;
 }
 
 #choices button {
   display: block;
-  width: 250px;
-  margin: 10px auto;
-  background: #fff;      
-  color: #000;            
-  border: 2px solid #000;  
+  width: 25vw;
+  max-width: 350px;
+  margin: 2vw auto;
+  background: #fff;
+  color: #000;
+  border: 2px solid #000;
 }
 
 #next-btn {
   display: block;
-  margin: 20px auto;
+  margin: 2vw auto;
 }
 
-
 #result-text {
-  font-size: 24px;
-  margin: 20px;
-  height: 30px;
+  font-size: 2.4vw;
+  margin: 2vw;
+  height: 3vw;
 }
 
 #correct-mark {
   position: fixed;
   top: 50%;
   left: 50%;
-  width: 180px;
-  height: 180px;
+  width: 18vw;
+  height: 18vw;
   transform: translate(-50%, -50%);
-  border: 20px solid rgba(255, 0, 0, 0.6);
+  border: 2vw solid rgba(255, 0, 0, 0.6);
   border-radius: 50%;
   display: none;
   pointer-events: none;
@@ -84,8 +87,8 @@ button:hover {
   position: fixed;
   top: 50%;
   left: 50%;
-  width: 180px;
-  height: 180px;
+  width: 18vw;
+  height: 18vw;
   transform: translate(-50%, -50%);
   display: none;
   pointer-events: none;
@@ -98,8 +101,8 @@ button:hover {
   position: absolute;
   top: 0;
   left: 50%;
-  width: 20px;
-  height: 180px;
+  width: 2vw;
+  height: 18vw;
   background: rgba(0, 100, 255, 0.6);
   transform-origin: center;
 }
@@ -113,83 +116,71 @@ button:hover {
 }
 
 .correct-choice {
-  background: #ff4a4a !important; 
+  background: #ff4a4a !important;
   color: white !important;
   border: 2px solid #ff4a4a !important;
 }
 
 .wrong-choice {
-  background: #444 !important; 
+  background: #444 !important;
   color: #fff !important;
   border: 2px solid #444 !important;
 }
 
 #result {
-  margin-top: 40px;
+  margin-top: 4vw;
 }
 
 #score-text {
-  font-size: 26px;
-  margin-bottom: 20px;
+  font-size: 2.6vw;
+  margin-bottom: 2vw;
 }
 
-/* スマホ向けレイアウト調整（超拡大モード） */
+/* ===== スマホ向けレイアウト（画面幅600px以下） ===== */
+
 @media (max-width: 600px) {
 
   body {
-    font-size: 30px;        /* 全体の文字をかなり大きく */
-    padding: 0;             /* 余白を最小にして画面を広く使う */
+    font-size: 5vw;
+    padding: 2vw;
   }
 
-  h1, h2, #quiz-title {
-    font-size: 38px;        /* タイトルを超大きく */
-    margin-bottom: 30px;
+  button {
+    font-size: 5vw;
+    padding: 4vw;
   }
 
-  #home {
-    margin-top: 10px;
-  }
-
-  #home p {
-    font-size: 30px;
-  }
-
-  /* ホーム画面のボタン */
   #group-buttons button {
-    width: 100%;            /* 画面幅いっぱい */
-    font-size: 30px;        /* 文字も大きく */
-    padding: 24px;          /* 押しやすく */
-    margin: 18px auto;
+    width: 90%;
+    font-size: 5vw;
+    padding: 4vw;
   }
 
-  /* 問題の単語 */
+  #quiz-title {
+    font-size: 7vw;
+  }
+
   #question-word {
-    font-size: 44px;        /* かなり大きく */
-    margin: 35px 0;
+    font-size: 8vw;
   }
 
-  /* 選択肢ボタン */
   #choices button {
-    width: 100%;
-    font-size: 30px;
-    padding: 24px;
-    margin: 18px auto;
+    width: 90%;
+    font-size: 5vw;
+    padding: 4vw;
   }
 
-  /* 結果画面 */
   #result-text {
-    font-size: 32px;
-    margin-top: 25px;
+    font-size: 6vw;
   }
 
   #score-text {
-    font-size: 34px;
-    margin-top: 25px;
+    font-size: 7vw;
   }
 
   #next-btn {
-    width: 100%;
-    font-size: 30px;
-    padding: 24px;
+    width: 90%;
+    font-size: 5vw;
+    padding: 4vw;
   }
 }
