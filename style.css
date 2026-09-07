@@ -5,13 +5,13 @@ body {
   text-align: center;
   background: #f5f5f5;
   margin: 0;
-  padding: 2vw; /* 画面幅に応じて変化 */
+  padding: 2vw;
 }
 
 button {
-  padding: 1.2vw 2vw;
+  padding: 1.5vw 3vw;
   margin: 1vw;
-  font-size: 1.8vw;
+  font-size: 2vw;
   cursor: pointer;
   border-radius: 8px;
   border: none;
@@ -29,7 +29,7 @@ button:hover {
 
 #group-buttons button {
   display: block;
-  width: 20vw;
+  width: 25vw;
   max-width: 300px;
   margin: 2vw auto;
 }
@@ -39,18 +39,18 @@ button:hover {
 }
 
 #quiz-title {
-  font-size: 3vw;
+  font-size: 3.5vw;
   margin-bottom: 2vw;
 }
 
 #question-word {
-  font-size: 3.5vw;
+  font-size: 4vw;
   margin: 2vw 0;
 }
 
 #choices button {
   display: block;
-  width: 25vw;
+  width: 30vw;
   max-width: 350px;
   margin: 2vw auto;
   background: #fff;
@@ -64,7 +64,7 @@ button:hover {
 }
 
 #result-text {
-  font-size: 2.4vw;
+  font-size: 3vw;
   margin: 2vw;
   height: 3vw;
 }
@@ -73,8 +73,8 @@ button:hover {
   position: fixed;
   top: 50%;
   left: 50%;
-  width: 18vw;
-  height: 18vw;
+  width: 20vw;
+  height: 20vw;
   transform: translate(-50%, -50%);
   border: 2vw solid rgba(255, 0, 0, 0.6);
   border-radius: 50%;
@@ -87,8 +87,8 @@ button:hover {
   position: fixed;
   top: 50%;
   left: 50%;
-  width: 18vw;
-  height: 18vw;
+  width: 20vw;
+  height: 20vw;
   transform: translate(-50%, -50%);
   display: none;
   pointer-events: none;
@@ -102,7 +102,7 @@ button:hover {
   top: 0;
   left: 50%;
   width: 2vw;
-  height: 18vw;
+  height: 20vw;
   background: rgba(0, 100, 255, 0.6);
   transform-origin: center;
 }
@@ -132,7 +132,7 @@ button:hover {
 }
 
 #score-text {
-  font-size: 2.6vw;
+  font-size: 3vw;
   margin-bottom: 2vw;
 }
 
@@ -141,46 +141,46 @@ button:hover {
 @media (max-width: 600px) {
 
   body {
-    font-size: 5vw;
-    padding: 2vw;
+    font-size: 6vw;
+    padding: 3vw;
   }
 
   button {
-    font-size: 5vw;
-    padding: 4vw;
+    font-size: 6vw;
+    padding: 5vw;
   }
 
   #group-buttons button {
     width: 90%;
-    font-size: 5vw;
-    padding: 4vw;
+    font-size: 6vw;
+    padding: 5vw;
   }
 
   #quiz-title {
-    font-size: 7vw;
+    font-size: 8vw;
   }
 
   #question-word {
-    font-size: 8vw;
+    font-size: 10vw;
   }
 
   #choices button {
     width: 90%;
-    font-size: 5vw;
-    padding: 4vw;
+    font-size: 6vw;
+    padding: 5vw;
   }
 
   #result-text {
-    font-size: 6vw;
+    font-size: 7vw;
   }
 
   #score-text {
-    font-size: 7vw;
+    font-size: 8vw;
   }
 
   #next-btn {
     width: 90%;
-    font-size: 5vw;
-    padding: 4vw;
+    font-size: 6vw;
+    padding: 5vw;
   }
 }
