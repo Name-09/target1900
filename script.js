@@ -1,13 +1,8 @@
 //noun（名詞）
-
 //verb（動詞）
-
 //adj（形容詞）
-
 //adv（副詞）
-
 //prep（前置詞）
-
 //conj（接続詞）
 
 const group1 = [
@@ -115,6 +110,19 @@ const group2 = [
   { word: "mere", meaning: "単なる", pos: "adj" },
   { word: "tropical", meaning: "熱帯の", pos: "adj" },
   { word: "forth", meaning: "前へ", pos: "adv" },
+  { word: "possess", meaning: "所有している", pos: "verb" },
+  { word: "", meaning: "", pos: "verb" },
+  { word: "", meaning: "", pos: "verb" },
+  { word: "", meaning: "", pos: "verb" },
+  { word: "", meaning: "", pos: "verb" },
+  { word: "", meaning: "", pos: "verb" },
+  { word: "", meaning: "", pos: "verb" },
+  { word: "", meaning: "", pos: "verb" },
+  { word: "", meaning: "", pos: "verb" },
+  { word: "", meaning: "", pos: "verb" },
+  { word: "", meaning: "", pos: "verb" },
+  { word: "", meaning: "", pos: "verb" },
+  { word: "", meaning: "", pos: "verb" },
 
  
 ];
