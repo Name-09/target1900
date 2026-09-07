@@ -49,9 +49,9 @@ button:hover {
   display: block;
   width: 250px;
   margin: 10px auto;
-  background: #fff;        /* 白背景 */
-  color: #000;             /* 黒文字 */
-  border: 2px solid #000;  /* 黒枠 */
+  background: #fff;      
+  color: #000;            
+  border: 2px solid #000;  
 }
 
 #next-btn {
@@ -113,13 +113,13 @@ button:hover {
 }
 
 .correct-choice {
-  background: #ff4a4a !important; /* 赤 */
+  background: #ff4a4a !important; 
   color: white !important;
   border: 2px solid #ff4a4a !important;
 }
 
 .wrong-choice {
-  background: #444 !important; /* 薄い黒 */
+  background: #444 !important; 
   color: #fff !important;
   border: 2px solid #444 !important;
 }
