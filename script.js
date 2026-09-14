@@ -187,22 +187,30 @@ function startGroup(group, title) {
 
   document.getElementById("quiz-title").innerText = quizTitle;
 
-  generateQuestion();
-}
-
-
 function generateQuestion() {
   const q = order[currentIndex];
   document.getElementById("question-word").innerText = q.word;
 
-let choices = currentGroup
-  .filter(item => item !== q && item.pos === q.pos)  
-  .sort(() => Math.random() - 0.5)
-  .slice(0, 3);
+// ① 現在のグループ内で同じ品詞を探す
+let samePosChoices = currentGroup.filter(item => item !== q && item.pos === q.pos);
 
+// ② 足りなければ他のグループ＋ダミーから同じ品詞を補う
+if (samePosChoices.length < 3) {
+  const allGroups = [group1, group2, group3, group4, group5, group6, group7, group8, groupDummy];
+  const otherGroups = allGroups.filter(g => g !== currentGroup);
+  let extraChoices = [];
 
-  choices.push(q); 
-  choices.sort(() => Math.random() - 0.5);
+  otherGroups.forEach(g => {
+    extraChoices.push(...g.filter(item => item.pos === q.pos));
+  });
+
+  extraChoices = extraChoices.sort(() => Math.random() - 0.5).slice(0, 3 - samePosChoices.length);
+  samePosChoices = [...samePosChoices, ...extraChoices];
+}
+
+// ③ 正解を追加してシャッフル
+let choices = [...samePosChoices, q].sort(() => Math.random() - 0.5);
+
 
 
   const choicesDiv = document.getElementById("choices");
