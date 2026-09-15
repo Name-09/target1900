@@ -337,7 +337,3 @@ function goHome() {
   document.getElementById("quiz").style.display = "none";
   document.getElementById("result").style.display = "none";
 }
-document.getElementById("quiz-title").innerText = quizTitle;
-
-  generateQuestion();   // ←これが絶対に必要
-}
