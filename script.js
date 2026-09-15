@@ -175,6 +175,13 @@ const group5 = [];
 const group6 = [];
 const group7 = [];
 const group8 = [];
+const groupDummy = [
+    { word: "", meaning: "", pos: "adv" },
+    { word: "", meaning: "", pos: "adv" },
+    { word: "", meaning: "", pos: "adv" },
+    { word: "", meaning: "", pos: "adv" },
+  
+];
 
 
 let currentGroup = [];      
