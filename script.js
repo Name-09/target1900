@@ -213,7 +213,7 @@ const groupDummy = [
     { word: "whereas", meaning: "するのに(対し)", pos: "conj" },
     { word: "overseas", meaning: "海外へ", pos: "adv" },
     { word: "nevertheless", meaning: "それにもかかわらず", pos: "adv" },
-    { word: "", meaning: "いくぶん", pos: "adv" },
+    { word: "somewhat", meaning: "いくぶん", pos: "adv" },
 ];
 
 
