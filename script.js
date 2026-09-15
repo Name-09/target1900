@@ -176,11 +176,12 @@ const group6 = [];
 const group7 = [];
 const group8 = [];
 const groupDummy = [
-    { word: "", meaning: "", pos: "adv" },
-    { word: "", meaning: "", pos: "adv" },
-    { word: "", meaning: "", pos: "adv" },
-    { word: "", meaning: "", pos: "adv" },
-  
+    { word: "despite", meaning: "にもかかわらず", pos: "prep" },
+    { word: "eventually", meaning: "結局", pos: "adv" },
+    { word: "whereas", meaning: "するのに(対し)", pos: "conj" },
+    { word: "overseas", meaning: "海外へ", pos: "adv" },
+    { word: "nevertheless", meaning: "それにもかかわらず", pos: "adv" },
+    { word: "", meaning: "いくぶん", pos: "adv" },
 ];
 
 
