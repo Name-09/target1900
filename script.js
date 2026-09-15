@@ -196,10 +196,14 @@ function generateQuestion() {
 // ① 現在のグループ内で同じ品詞を探す
 let samePosChoices = currentGroup.filter(item => item !== q && item.pos === q.pos);
 
-// ② 足りなければ他のグループ＋ダミーから同じ品詞を補う
+// ② まず currentGroup 内から最大3つだけ取る
+samePosChoices = samePosChoices.sort(() => Math.random() - 0.5).slice(0, 3);
+
+// ③ 足りなければ他グループから補充
 if (samePosChoices.length < 3) {
   const allGroups = [group1, group2, group3, group4, group5, group6, group7, group8, groupDummy];
   const otherGroups = allGroups.filter(g => g !== currentGroup);
+
   let extraChoices = [];
 
   otherGroups.forEach(g => {
@@ -207,10 +211,11 @@ if (samePosChoices.length < 3) {
   });
 
   extraChoices = extraChoices.sort(() => Math.random() - 0.5).slice(0, 3 - samePosChoices.length);
+
   samePosChoices = [...samePosChoices, ...extraChoices];
 }
 
-// ③ 正解を追加してシャッフル
+// ④ 正解を追加してシャッフル
 let choices = [...samePosChoices, q].sort(() => Math.random() - 0.5);
 
 
