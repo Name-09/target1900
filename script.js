@@ -149,17 +149,27 @@ const group2 = [
   { word: "owe", meaning: "借りがある", pos: "verb" },
   { word: "sustain", meaning: "持続させる", pos: "verb" },
   { word: "assign", meaning: "割り当てる", pos: "verb" },
-  { word: "accomplish", meaning: "成し遂げる", pos: "verb" },
+  { word: "accomplish", meaning: "成し遂げる", pos: "verb" }, 
+];
+
+const group3 = [
   { word: "wisdom", meaning: "知恵", pos: "noun" },
   { word: "literacy", meaning: "読み書きの能力", pos: "noun" },
   { word: "heritage", meaning: "遺産", pos: "noun" },
   { word: "mission", meaning: "使命", pos: "noun" },
   { word: "license", meaning: "免許(証)", pos: "noun" },
+  { word: "", meaning: "", pos: "noun" },
+  { word: "", meaning: "", pos: "noun" },
+  { word: "", meaning: "", pos: "noun" },
+  { word: "", meaning: "", pos: "noun" },
+  { word: "", meaning: "", pos: "noun" },
+  { word: "", meaning: "", pos: "noun" },
+  { word: "", meaning: "", pos: "noun" },
+  { word: "", meaning: "", pos: "noun" },
+  { word: "", meaning: "", pos: "noun" },
+  { word: "", meaning: "", pos: "noun" },
 
- 
 ];
-
-const group3 = [];
 const group4 = [];
 const group5 = [];
 const group6 = [];
