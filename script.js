@@ -186,6 +186,7 @@ function startGroup(group, title) {
   document.getElementById("result").style.display = "none";
 
   document.getElementById("quiz-title").innerText = quizTitle;
+ generateQuestion(); 
 }
 
 function generateQuestion() {
