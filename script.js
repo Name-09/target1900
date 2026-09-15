@@ -216,13 +216,13 @@ function generateQuestion() {
   const q = order[currentIndex];
   document.getElementById("question-word").innerText = q.word;
 
-// ① 現在のグループ内で同じ品詞を探す
+
 let samePosChoices = currentGroup.filter(item => item !== q && item.pos === q.pos);
 
-// ② まず currentGroup 内から最大3つだけ取る
+
 samePosChoices = samePosChoices.sort(() => Math.random() - 0.5).slice(0, 3);
 
-// ③ 足りなければ他グループから補充
+
 if (samePosChoices.length < 3) {
   const allGroups = [group1, group2, group3, group4, group5, group6, group7, group8, groupDummy];
   const otherGroups = allGroups.filter(g => g !== currentGroup);
@@ -238,7 +238,6 @@ if (samePosChoices.length < 3) {
   samePosChoices = [...samePosChoices, ...extraChoices];
 }
 
-// ④ 正解を追加してシャッフル
 let choices = [...samePosChoices, q].sort(() => Math.random() - 0.5);
 
 
