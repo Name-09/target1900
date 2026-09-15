@@ -199,19 +199,7 @@ const group3 = [
   { word: "slight", meaning: "わずかな", pos: "adj" },
   { word: "federal", meaning: "連邦(政府)の", pos: "adj" },
   { word: "primitive", meaning: "原始的な", pos: "adj" },
-  { word: "", meaning: "", pos: "adj" },
-  { word: "", meaning: "", pos: "adj" },
-  { word: "", meaning: "", pos: "adj" },
-  { word: "", meaning: "", pos: "adj" },
-  { word: "", meaning: "", pos: "adj" },
-  { word: "", meaning: "", pos: "adj" },
-  { word: "", meaning: "", pos: "adj" },
-  { word: "", meaning: "", pos: "adj" },
-  { word: "", meaning: "", pos: "adj" },
-  { word: "", meaning: "", pos: "adj" },
-  { word: "", meaning: "", pos: "adj" },
-  { word: "", meaning: "", pos: "adj" },
-  { word: "", meaning: "", pos: "adj" },
+//  { word: "", meaning: "", pos: "adj" },
 
 ];
 const group4 = [];
