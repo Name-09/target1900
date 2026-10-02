@@ -199,8 +199,20 @@ const group3 = [
   { word: "slight", meaning: "わずかな", pos: "adj" },
   { word: "federal", meaning: "連邦(政府)の", pos: "adj" },
   { word: "primitive", meaning: "原始的な", pos: "adj" },
-//  { word: "", meaning: "", pos: "adj" },
-
+  { word: "unfamiliar", meaning: "不慣れな", pos: "adj" },
+  { word: "subtle", meaning: "微妙な", pos: "adj" },
+  { word: "plain", meaning: "明らかな", pos: "adj" },
+  { word: "marine", meaning: "海の", pos: "adj" },
+  { word: "apparent", meaning: "明白な", pos: "adj" },
+  { word: "reluctant", meaning: "気が進まない", pos: "adj" },
+  { word: "temporary", meaning: "一時的な", pos: "adj" },
+  { word: "guilty", meaning: "罪悪感のある", pos: "adj" },
+  { word: "royal", meaning: "王の", pos: "adj" },
+  { word: "pure", meaning: "純粋な", pos: "adj" },
+  { word: "incredible", meaning: "信じられない", pos: "adj" },
+  { word: "eager", meaning: "熱望して", pos: "adj" },
+  { word: "adequate", meaning: "十分な", pos: "adj" },
+  { word: "via", meaning: "～経由で", pos: "prep" },
 ];
 const group4 = [];
 const group5 = [];
