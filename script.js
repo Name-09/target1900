@@ -420,10 +420,7 @@ function checkAnswer(selected, correct, questionObj) {
 }
 
 
-document.querySelectorAll("#choices button").forEach(btn => {
-  btn.classList.remove("correct-choice", "wrong-choice");
-  btn.disabled = false;
-});
+
 
 
 
