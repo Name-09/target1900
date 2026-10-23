@@ -319,16 +319,9 @@ let wrongList = [];
 let quizTitle = "";         
 
 
-function startGroup(group, title) {
-  currentGroup = group;
-  quizTitle = title;
-
- 
-  function shuffle(array) {
-
-  // 100回ランダムに入れ替える
+// 配列をシャッフル
+function shuffle(array) {
   for (let i = 0; i < 100; i++) {
-
     let a = Math.floor(Math.random() * array.length);
     let b = Math.floor(Math.random() * array.length);
 
@@ -338,15 +331,12 @@ function startGroup(group, title) {
   }
 }
 
+// 問題開始
 function startGroup(group, title) {
-
   currentGroup = group;
   quizTitle = title;
 
-  // currentGroupをコピー
   order = currentGroup.slice();
-
-  // ランダムな順番にする
   shuffle(order);
 
   currentIndex = 0;
@@ -359,18 +349,6 @@ function startGroup(group, title) {
   document.getElementById("quiz-title").innerText = quizTitle;
 
   generateQuestion();
-}
-
-  currentIndex = 0;
-  wrongList = [];
-
-
-  document.getElementById("home").style.display = "none";
-  document.getElementById("quiz").style.display = "block";
-  document.getElementById("result").style.display = "none";
-
-  document.getElementById("quiz-title").innerText = quizTitle;
- generateQuestion(); 
 }
 
 function generateQuestion() {
