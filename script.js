@@ -324,8 +324,42 @@ function startGroup(group, title) {
   quizTitle = title;
 
  
-  order = [...currentGroup];
-  order.sort(() => Math.random() - 0.5);
+  function shuffle(array) {
+
+  // 100回ランダムに入れ替える
+  for (let i = 0; i < 100; i++) {
+
+    let a = Math.floor(Math.random() * array.length);
+    let b = Math.floor(Math.random() * array.length);
+
+    let temp = array[a];
+    array[a] = array[b];
+    array[b] = temp;
+  }
+}
+
+function startGroup(group, title) {
+
+  currentGroup = group;
+  quizTitle = title;
+
+  // currentGroupをコピー
+  order = currentGroup.slice();
+
+  // ランダムな順番にする
+  shuffle(order);
+
+  currentIndex = 0;
+  wrongList = [];
+
+  document.getElementById("home").style.display = "none";
+  document.getElementById("quiz").style.display = "block";
+  document.getElementById("result").style.display = "none";
+
+  document.getElementById("quiz-title").innerText = quizTitle;
+
+  generateQuestion();
+}
 
   currentIndex = 0;
   wrongList = [];
